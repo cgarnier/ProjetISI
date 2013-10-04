@@ -1,0 +1,34 @@
+/*
+ * Disk.cpp
+ *
+ *  Created on: 10 oct. 2012
+ *      Author: cgarnie2
+ */
+
+#include "objects/Disk.h"
+#include "objects/triMesh.h"
+Disk::Disk(): TriMesh()
+{
+    _name = "Disk";
+
+    static const GLfloat ps[5][3] = {
+        {-1,-1,-1},{-1,1,-1},{1,1,-1},{1,-1,-1},
+        {0,0,1}
+    };
+    static const GLint ts[6][3] = {
+        {0,1,2},{0,2,3},    // bottom triangles
+        {0,3,4},{3,2,4},{2,1,4},{1,0,4} // side triangles
+    };
+
+    int i;
+
+    for (i=0; i<5 ; ++i)
+       addVertex(ps[i][0], ps[i][1], ps[i][2]);
+
+    for (i=0; i<6; ++i)
+        addTriangle(ts[i][0], ts[i][1], ts[i][2]);
+
+    computeNormalsT();  // to be fixed
+    computeNormalsV();  // to be fixed
+}
+

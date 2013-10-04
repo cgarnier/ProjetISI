@@ -1,0 +1,22 @@
+/*
+ * Disk.h
+ *
+ *  Created on: 10 oct. 2012
+ *      Author: cgarnie2
+ */
+
+#ifndef DISK_H_
+#define DISK_H_
+
+#include "triMesh.h"
+
+class Disk : public TriMesh {
+
+    public:
+        Disk();
+        virtual ~Disk(){};
+
+
+};
+
+#endif /* DISK_H_ */

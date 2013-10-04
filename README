@@ -1,0 +1,114 @@
+#########################
+# Compilation:
+#########
+qmake-qt4
+make
+
+ou 
+
+cmake
+make
+
+#########################
+# Utilisation:
+#########
+USAGE: 
+
+   ./isiviewer  [--off <string>] [--func3] [--func2] [--func1] [-m] [--]
+                [--version] [-h]
+
+USAGE: 
+
+   ./isiviewer  [--off <string>] [--func3] [--func2] [--func1] [-m] [--]
+                [--version] [-h]
+
+
+Where: 
+
+   --off <string>
+     Charger un object OFF
+
+   --func3
+     Charger la fonction de surface sin(x) - sin(y) + sin(10x)/10 +
+     sin(10y)/y
+
+   --func2
+     Charger la fonction de surface x*exp(-x*x-y*y)
+
+   --func1
+     Charger la fonction de surface exp(-(x*x/2 + y*y/2))*cos(2*x*x +
+     2*y*y)
+
+   -m,  --mesh
+     Charger les objets à base de triangle. Naviguer avec F1,F2 ..
+
+   --,  --ignore_rest
+     Ignores the rest of the labeled arguments following this flag.
+
+   --version
+     Displays version information and exits.
+
+   -h,  --help
+     Displays usage information and exits.
+
+Where: 
+
+   --off <string>
+     Charger un object OFF
+
+   --func3
+     Charger la fonction de surface sin(x) - sin(y) + sin(10x)/10 +
+     sin(10y)/y
+
+   --func2
+     Charger la fonction de surface x*exp(-x*x-y*y)
+
+   --func1
+     Charger la fonction de surface exp(-(x*x/2 + y*y/2))*cos(2*x*x +
+     2*y*y)
+
+   -m,  --mesh
+     Charger les objets à base de triangle. Naviguer avec F1,F2 ..
+
+   --,  --ignore_rest
+     Ignores the rest of the labeled arguments following this flag.
+
+   --version
+     Displays version information and exits.
+
+   -h,  --help
+     Displays usage information and exits.
+USAGE: 
+
+   ./isiviewer  [--off <string>] [--func3] [--func2] [--func1] [-m] [--]
+                [--version] [-h]
+
+
+Where: 
+
+   --off <string>
+     Charger un object OFF
+
+   --func3
+     Charger la fonction de surface sin(x) - sin(y) + sin(10x)/10 +
+     sin(10y)/y
+
+   --func2
+     Charger la fonction de surface x*exp(-x*x-y*y)
+
+   --func1
+     Charger la fonction de surface exp(-(x*x/2 + y*y/2))*cos(2*x*x +
+     2*y*y)
+
+   -m,  --mesh
+     Charger les objets à base de triangle. Naviguer avec F1,F2 ..
+
+   --,  --ignore_rest
+     Ignores the rest of the labeled arguments following this flag.
+
+   --version
+     Displays version information and exits.
+
+   -h,  --help
+     Displays usage information and exits.
+
